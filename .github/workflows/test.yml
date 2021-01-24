@@ -1,0 +1,21 @@
+name: MacOS Validation Test
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: 'macOS-latest'
+
+    steps:
+      # Checkout the repository
+      - uses: actions/checkout@v2
+      - name: Brew Update
+        run: brew update
+      - name: Brew Cleanup
+        run: brew cleanup
+      - name: Run Test
+        run: |
+          set -ex
+          brew install Formula/dotfiles.rb
+          dotfiles version
+          dotfiles help
