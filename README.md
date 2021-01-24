@@ -1,14 +1,19 @@
-# Bidvine  Homebrew Tap
+# Homebrew Tap
 
-Install the Bidvine CLI with
+## Description
+This tap holds the formula for my personal taps. Namely the following:
+- dotfiles-cli
+
+
+Install the Dotfiles CLI with
 
 ```
-$ brew install bidvine/brew/bid
+$ brew install mikemimik/brew/dotfiles
 ```
 
 _*Alternatively*_
 
 ```
-$ brew tap bidvine/brew
-$ brew install bid
+$ brew tap mikemimik/brew
+$ brew install dotfiles
 ```
