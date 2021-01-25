@@ -2,7 +2,7 @@ class Dotfiles < Formula
     desc "Everything you need to get started with a new computer with dotfiles"
     homepage "https://github.com/mikemimik/dotfiles"
     url "https://github.com/mikemimik/dotfiles/releases/download/v0.1.5/dotfiles-v0.1.5-darwin-x64.tar.gz"
-    sha256 "9d2fc96bd68cb0ae9f30ff8a468d703a6021851c47155abb34b4b9daeaf85686"
+    sha256 "5f3aa3065e67e40ab0cacb4457deefde40c49d0ae5cebceb3f72c6606a3079d2"
     depends_on "mikemimik/brew/dotfiles-node"
 
     def install
