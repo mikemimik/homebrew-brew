@@ -1,8 +1,8 @@
 class Dotfiles < Formula
     desc "Everything you need to get started with a new computer with dotfiles"
     homepage "https://github.com/mikemimik/dotfiles"
-    url "https://cli-assets.bdv.im/bid-v1.0.0/bid-v1.0.0.tar.gz"
-    sha256 "{{replace-with-checksum}}"
+    url "https://github.com/mikemimik/dotfiles/releases/download/v0.1.5/dotfiles-v0.1.5-darwin-x64.tar.gz"
+    sha256 "9d2fc96bd68cb0ae9f30ff8a468d703a6021851c47155abb34b4b9daeaf85686"
     depends_on "mikemimik/brew/dotfiles-node"
 
     def install
