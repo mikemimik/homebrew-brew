@@ -6,7 +6,7 @@ class Dotfiles < Formula
     depends_on "mikemimik/brew/dotfiles-node"
 
     def install
-      inreplace "bin/dotfiles", /^CLIENT_HOME=/, "export MIKEMIMIK-CLI_OCLIF_CLIENT_HOME=#{lib/"client"}\nCLIENT_HOME="
+      inreplace "bin/dotfiles", /^CLIENT_HOME=/, "export DOTFILES_OCLIF_CLIENT_HOME=#{lib/"client"}\nCLIENT_HOME="
       inreplace "bin/dotfiles", "\"$DIR/node\"", "#{Formula["dotfiles-node"].opt_share}/node"
       libexec.install Dir["*"]
       bin.install_symlink libexec/"bin/dotfiles"
